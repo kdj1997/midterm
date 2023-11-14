@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+<form id="registration" action="">
+
+    <h1>Register</h1>
+
+    <div class="tab">Name:
+        <p><input placeholder="Name" oninput="this.className = ''"></p>
+    </div>
+
+    <div class="tab">Contact Info:
+        <p><input placeholder="Phone number" oninput="this.className = ''"></p>
+    </div>
+
+    <div class="tab">Create your username:
+        <p><input placeholder="Username" oninput="this.className = ''"></p>
+    </div>
+
+    <div class="tab">Login Info:
+        <p><input placeholder="Password" oninput="this.className = ''"></p>
+    </div>
+
+    <div style="overflow:auto;">
+        <div style="float:right;">
+            <button type="button" id="prevButton" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextButton" onclick="nextPrev(1)">Next</button>
+        </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+    </div>
+
+</form>
+</div>
+<script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="flashcard.png" />
+  <link rel="stylesheet" href="../style.css">
+  <link rel="shortcut icon" type="image/png" href="https://cdn1.iconfinder.com/data/icons/japan-travel-solid-konnichiwa/512/Japanese_fan-512.png">
+  <title>Japanese Flashcards</title>
+  <style>
+    .home{
+      font-family: "Gill Sans", sans-serif;
+      text-decoration-line: none;
+      background-color: #92b3ff;
+      color: black;
+      font-size: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<main>
+
+  <header>
+    <div class="container">
+      <div id="header">
+        <h1><a href="../index.html" class="home">ENG Flash Cards</a></h1>
+        <div>
+          <button><a href="alp.html">Alphabet</a></button>
+          <button><a href="nm.html">Numbers</a></button>
+          <div class="dropdown">
+            <button class="dropbtn">Vocabulary</button>
+            <div class="dropdown-content">
+              <a href="food.html">Food</a>
+              <a href="colors.html">Color</a>
+              <a href="bodyparts.html">Body Parts</a>
+            </div>
+          </div>
+          <button style="background: rgb(180, 160, 210);"><a href="new_cards.html">Create</a></button>
+          <button id="show_card_box" style="font-size:12pt; margin-left:15px; margin-right:5px; color: black; background: DarkSeaGreen;">Add Card</button>
+          <button id="delete_cards" style="font-size:12pt; margin-left:5px; margin-right:5px; color: black; background: DarkSeaGreen;">Del Cards</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div id="text"></div>
+      <div id="create_card">
+        <h2>Create Flashcard</h2>
+        <label for="question">Question</label>
+        <textarea id="question" maxlength="280"></textarea>
+        <label for="answer" maxlength="280">Answer</label>
+        <br>
+        <textarea id="answer"></textarea>
+        <div>
+          <button id="save_card">Save</button> <button id="close_card_box">Close</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div id="flashcards"></div>
+    </div>
+  </section>
+
+</main>
+
+<script src="../script.js"></script>
+</body>
+</html>

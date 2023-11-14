@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="flashcard.png" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" type="image/png" href="https://cdn1.iconfinder.com/data/icons/japan-travel-solid-konnichiwa/512/Japanese_fan-512.png">
+    <title>Japanese Flashcards</title>
+    <style>
+        .home{
+            font-family: "Gill Sans", sans-serif;
+            text-decoration-line: none;
+            background-color: #92b3ff;
+            color: black;
+            font-size: 40px;
+        }
+    </style>
+    <script>
+        function change() {
+            if(document.getElementById("answer2").style.display == "none")
+                document.getElementById("answer2").style.display = "block";
+            else
+                document.getElementById("answer2").style.display = "none";
+        }
+        function change1() {
+            if(document.getElementById("answer3").style.display == "none")
+                document.getElementById("answer3").style.display = "block";
+            else
+                document.getElementById("answer3").style.display = "none";
+        }
+        function change2() {
+            if(document.getElementById("answer4").style.display == "none")
+                document.getElementById("answer4").style.display = "block";
+            else
+                document.getElementById("answer4").style.display = "none";
+        }
+        function change3() {
+            if(document.getElementById("answer5").style.display == "none")
+                document.getElementById("answer5").style.display = "block";
+            else
+                document.getElementById("answer5").style.display = "none";
+        }
+        function change4() {
+            if(document.getElementById("answer6").style.display == "none")
+                document.getElementById("answer6").style.display = "block";
+            else
+                document.getElementById("answer6").style.display = "none";
+        }
+        function change5() {
+            if(document.getElementById("answer7").style.display == "none")
+                document.getElementById("answer7").style.display = "block";
+            else
+                document.getElementById("answer7").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div id="header">
+            <h1><a href="../index.html" class="home">ENG Flash Cards</a></h1>
+            <div>
+                <button><a href="alp.html">Alphabet</a></button>
+                <button><a href="nm.html">Numbers</a></button>
+                <div class="dropdown">
+                    <button class="dropbtn">Vocabulary</button>
+                    <div class="dropdown-content">
+                        <a href="food.html">Food</a>
+                        <a href="colors.html">Color</a>
+                        <a href="bodyparts.html">Body Parts</a>
+                    </div>
+                </div>
+                <button><a href="new_cards.html">Create</a></button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <div id="create_card">
+            <h2>Create Flashcard</h2>
+            <label for="question">Question</label>
+            <textarea id="question" maxlength="280"></textarea>
+            <label for="answer" maxlength="280">Answer</label>
+            <br>
+            <textarea id="answer"></textarea>
+            <div>
+                <button id="save_card">Save</button> <button id="close_card_box">Close</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div id="flashcards">
+            <div class="flashcard" id="thing" onclick="change()">
+                <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">Rice</h2>
+                <h3 id="answer2" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">Күріш</h3></div>
+            <div class="flashcard" id="thing" onclick="change1()">
+                <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">Beef</h2>
+                <h3 id="answer3" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">Сиыр еті</h3></div>
+            <div class="flashcard" id="thing" onclick="change2()">
+                <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">Grapes</h2>
+                <h3 id="answer4" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">Жүзім</h3></div>
+            <div class="flashcard" id="thing" onclick="change3()">
+                <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">Carrots</h2>
+                <h3 id="answer5" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">Сәбіздер</h3></div>
+            <div class="flashcard" id="thing" onclick="change4()">
+                <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">Watermelon</h2>
+                <h3 id="answer6" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">Қауын</h3></div>
+            <div class="flashcard" id="thing" onclick="change5()">
+                <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">Beans</h2>
+                <h3 id="answer7" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">Бұршақтар</h3></div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../food/apple.png" alt="Avatar" style="width:300px;height:200px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Алма</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../food/cake.png" alt="Avatar" style="width:300px;height:200px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Торт</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../food/cheese.png" alt="Avatar" style="width:300px;height:200px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Ірімшік</h1>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../food/chips.png" alt="Avatar" style="width:300px;height:200px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Чипсы</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../food/orange.png" alt="Avatar" style="width:300px;height:200px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Апельсин</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../food/sausage.png" alt="Avatar" style="width:300px;height:200px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Шұжық</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<script src="../script.js"></script>
+</body>
+</html>

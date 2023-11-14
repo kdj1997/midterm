@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>FlashMinds</title>
+  <style>
+    .home{
+      font-family: "Gill Sans", sans-serif;
+      text-decoration-line: none;
+      background-color: #92b3ff;
+      color: black;
+      font-size: 75px;
+    }
+  </style>
+</head>
+<body>
+
+<main>
+
+  <header>
+    <div class="container">
+      <div id="header">
+        <img src="images/book.png" width="80px" height="80px">
+        <h1><a href="index.html" class="home">FlashMinds</a></h1>
+        <div>
+          <button><a href="HTML/alp.html">Alphabet</a></button>
+          <button><a href="HTML/nm.html">Numbers</a></button>
+          <div class="dropdown">
+            <button class="dropbtn">Vocabulary</button>
+            <div class="dropdown-content">
+              <a href="HTML/food.html">Food</a>
+              <a href="HTML/colors.html">Color</a>
+              <a href="HTML/bodyparts.html">Body Parts</a>
+            </div>
+          </div>
+          <button><a href="HTML/new_cards.html">Create</a></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="main2">
+    <div class="container">
+      <div class="container-left">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/about.jpg" alt="Avatar" style="width:750px;height:600px;">
+            </div>
+            <div class="flip-card-back">
+              <img src="images/contacts.jpg" alt="Avatar" style="width:750px;height:600px;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="intro"></div><br><br>
+      <img src="images/owl.png" width="30%" style="position: absolute; top: 35%; right: 0px; left: 64%; border-radius: 50px;">
+  </section>
+
+  <section>
+    <div class="container">
+      <div id="flashcards"></div>
+
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

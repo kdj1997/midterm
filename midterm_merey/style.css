@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #92b3ff;
+}
+
+#intro{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#text{
+    margin-left: 42%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+}
+
+a{
+    text-decoration-line: none;
+    color: black;
+    font-size: 13pt;
+}
+
+.dropbtn{
+    background-color: #92b3ff;
+    color: black;
+    padding: 8px;
+    font-size: 13pt;
+    border: 1px solid #92b3ff;
+    cursor: pointer;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgba(45, 5, 66, 0.5);
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: rgba(182, 0, 237, 0.9)}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgba(177, 3, 252, 0.1);
+
+}
+
+body{
+    font-family: "Gill Sans", sans-serif;
+    font-size: 1rem;
+    background: whitesmoke;
+}
+
+button{
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background: whitesmoke;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+button:hover{
+    background-color: rgb(225, 220, 250);");
+}
+
+.container{
+    width: 1280px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+header{
+    background-color: #92b3ff;;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 0 20px;
+    background-color: #92b3ff;
+}
+
+#header button{
+    font-family: inherit;
+    border: 1px solid black;
+    background-color: #92b3ff;
+}
+
+#create_card{
+    display: none;
+    width: 370px;
+    margin:auto;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #92b3ff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+}
+
+#create_card h2{
+    color: black;
+    text-align: center;
+}
+
+#create_card textarea{
+    width: 100%;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+#create_card button{width: fit-content;}
+
+#flashcards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+.flashcard{
+    width: 180px;
+    height: 150px;
+    word-wrap: break-word;
+    margin: 10px;
+    background:#fff;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+}
+
+#card{
+    background: beige;
+    color: black;
+    padding: 20px 10px;
+    border: 2px solid grey;
+}
+
+.flashcard h2{font-size: 1rem;}
+
+@media(max-width:1280px){
+    .container{width: 100%;}
+}
+
+@media(max-width:768px){
+    .flashcard{margin: auto;}
+
+    .flashcard{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:480px){
+    #header{
+        padding: 20px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #create_card{width: 95%;}
+
+    .flashcard{width: 100%;}
+
+}
+
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #92b3ff;
+    color: white;
+    transform: rotateY(180deg);
+}
